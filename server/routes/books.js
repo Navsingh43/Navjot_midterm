@@ -17,6 +17,7 @@ let book = require('../models/books');
 router.get('/', (req, res, next) => {
   // find all books in the books collection
   book.find( (err, books) => {
+
     if (err) {
       return console.error(err);
     }
@@ -85,7 +86,7 @@ router.post('/edit/:id', (req, res, next) => {
 
   let updatedBook = book({
       "_id": id,
-      "name": req.body.name,
+      "title": req.body.title,
       "author": req.body.author,
       "price": req.body.price,
       "genre":req.body.genre
