@@ -1,3 +1,10 @@
+/*File Name: books.js   
+  Author Name: Navjot Singh 
+  Student ID: 301157391
+  WebApp Name: Favorite Book List
+
+  */
+
 // modules required for routing
 let express = require('express');
 let router = express.Router();
